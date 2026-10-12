@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Copyright-safe covered-resource benchmark row",
+  "type": "object",
+  "required": [
+    "benchmark_id",
+    "group",
+    "query",
+    "perturbation_type",
+    "public_target_id",
+    "expected_action",
+    "ambiguity_flag",
+    "synthetic_flag",
+    "release_status"
+  ],
+  "properties": {
+    "benchmark_id": {
+      "type": "string"
+    },
+    "group": {
+      "enum": [
+        "B1",
+        "B2",
+        "B3",
+        "B4"
+      ]
+    },
+    "query": {
+      "type": "string",
+      "description": "Blank when text is withheld pending review."
+    },
+    "perturbation_type": {
+      "type": "string"
+    },
+    "public_target_id": {
+      "type": "string",
+      "pattern": "^$|^T[0-9]{6}$"
+    },
+    "expected_action": {
+      "enum": [
+        "AUTO_RESOLVE",
+        "REVIEW",
+        "ABSTAIN"
+      ]
+    },
+    "ambiguity_flag": {
+      "type": "boolean"
+    },
+    "synthetic_flag": {
+      "type": "boolean"
+    },
+    "release_status": {
+      "enum": [
+        "PUBLIC_SAFE",
+        "AUTHOR_REVIEW",
+        "EXCLUDE"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

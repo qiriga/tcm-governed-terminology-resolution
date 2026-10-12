@@ -1,0 +1,6 @@
+benchmark_id,group,query,perturbation_type,public_target_id,expected_action,ambiguity_flag,synthetic_flag,release_status
+TOY-001,B1,甲术语,none,T900001,AUTO_RESOLVE,false,true,PUBLIC_SAFE
+TOY-002,B2,甲别名,none,T900001,AUTO_RESOLVE,false,true,PUBLIC_SAFE
+TOY-003,B3,乙 术语,inserted space,T900002,AUTO_RESOLVE,false,true,PUBLIC_SAFE
+TOY-004,B4,完全无关输入,synthetic unsupported query,,ABSTAIN,false,true,PUBLIC_SAFE
+TOY-005,B4,冲突术语,synthetic ambiguity,,REVIEW,true,true,PUBLIC_SAFE

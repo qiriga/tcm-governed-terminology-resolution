@@ -1,0 +1,90 @@
+{
+  "audit_status": "REQUIRES_AUTHOR_REVIEW",
+  "legal_determination": "Not made by the staging process.",
+  "classes": [
+    {
+      "class": "B1 exact main-name queries",
+      "source": "covered terminology resource",
+      "derived_or_original": "original/query extract",
+      "contains_latin": false,
+      "contains_author": false,
+      "contains_private_id": false,
+      "contains_source_text": true,
+      "copyright_risk": "uncertain",
+      "release_decision": "AUTHOR_REVIEW (query withheld)",
+      "author_review_required": true
+    },
+    {
+      "class": "B2 verified aliases",
+      "source": "verified alias resource",
+      "derived_or_original": "original/query extract",
+      "contains_latin": false,
+      "contains_author": false,
+      "contains_private_id": false,
+      "contains_source_text": true,
+      "copyright_risk": "uncertain",
+      "release_decision": "AUTHOR_REVIEW (query withheld)",
+      "author_review_required": true
+    },
+    {
+      "class": "B3 controlled perturbations",
+      "source": "derived from covered query text",
+      "derived_or_original": "derived",
+      "contains_latin": false,
+      "contains_author": false,
+      "contains_private_id": false,
+      "contains_source_text": true,
+      "copyright_risk": "requires source-text review",
+      "release_decision": "AUTHOR_REVIEW (query withheld)",
+      "author_review_required": true
+    },
+    {
+      "class": "B4 synthetic unknowns",
+      "source": "study-generated synthetic strings",
+      "derived_or_original": "derived/synthetic",
+      "contains_latin": false,
+      "contains_author": false,
+      "contains_private_id": false,
+      "contains_source_text": false,
+      "copyright_risk": "low",
+      "release_decision": "PUBLIC_SAFE",
+      "author_review_required": false
+    },
+    {
+      "class": "B4 real ambiguity cases",
+      "source": "study/source examples",
+      "derived_or_original": "mixed",
+      "contains_latin": false,
+      "contains_author": false,
+      "contains_private_id": false,
+      "contains_source_text": true,
+      "copyright_risk": "uncertain",
+      "release_decision": "AUTHOR_REVIEW (query withheld)",
+      "author_review_required": true
+    },
+    {
+      "class": "aggregate metrics",
+      "source": "frozen paper results",
+      "derived_or_original": "derived aggregate",
+      "contains_latin": false,
+      "contains_author": false,
+      "contains_private_id": false,
+      "contains_source_text": false,
+      "copyright_risk": "low",
+      "release_decision": "PUBLIC_SAFE",
+      "author_review_required": false
+    },
+    {
+      "class": "figures",
+      "source": "author-verified frozen aggregate results",
+      "derived_or_original": "derived",
+      "contains_latin": false,
+      "contains_author": false,
+      "contains_private_id": false,
+      "contains_source_text": false,
+      "copyright_risk": "author-created",
+      "release_decision": "PUBLIC_SAFE subject to publication policy",
+      "author_review_required": true
+    }
+  ]
+}

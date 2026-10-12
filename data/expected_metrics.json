@@ -1,0 +1,73 @@
+{
+  "scope_note": "Frozen covered-resource benchmark results; not unseen generalization.",
+  "total_queries": 1855,
+  "automatic_resolutions": 1403,
+  "correct_automatic_resolutions": {
+    "numerator": 1400,
+    "denominator": 1403
+  },
+  "review_or_abstention": {
+    "numerator": 452,
+    "denominator": 1855
+  },
+  "unsafe_automatic_resolutions": {
+    "numerator": 3,
+    "denominator": 1855
+  },
+  "groups": {
+    "B1": {
+      "automatic": {
+        "numerator": 600,
+        "denominator": 600
+      },
+      "correct": {
+        "numerator": 600,
+        "denominator": 600
+      }
+    },
+    "B2": {
+      "automatic": {
+        "numerator": 600,
+        "denominator": 600
+      },
+      "correct": {
+        "numerator": 600,
+        "denominator": 600
+      }
+    },
+    "B3": {
+      "automatic": {
+        "numerator": 203,
+        "denominator": 600
+      },
+      "correct": 200,
+      "unsafe": 3,
+      "candidate_recall_at_1": {
+        "numerator": 449,
+        "denominator": 600
+      },
+      "candidate_recall_at_20": {
+        "numerator": 527,
+        "denominator": 600
+      }
+    },
+    "B4": {
+      "automatic": {
+        "numerator": 0,
+        "denominator": 55
+      },
+      "abstained": {
+        "numerator": 55,
+        "denominator": 55
+      }
+    }
+  },
+  "provenance": {
+    "numerator": 1403,
+    "denominator": 1403
+  },
+  "repeatability": {
+    "numerator": 1855,
+    "denominator": 1855
+  }
+}

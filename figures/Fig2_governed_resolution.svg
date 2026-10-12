@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120">
+<defs><style>
+.title{font:700 31px Arial,sans-serif;fill:#111}.head{font:700 21px Arial,sans-serif;fill:#111}.txt{font:17px Arial,sans-serif;fill:#111}.small{font:15px Arial,sans-serif;fill:#222}.connector{font:600 17px Arial,sans-serif;fill:#111}.level{font:700 20px Arial,sans-serif;fill:#111}.box{fill:#fff;stroke:#111;stroke-width:2.5}.gate{fill:#d8d8d8;stroke:#111;stroke-width:2.5}.candidate{fill:#f7f7f7;stroke:#111;stroke-width:2.5;stroke-dasharray:10 7}.review{fill:url(#hatch);stroke:#111;stroke-width:2.5}.arrow{stroke:#111;stroke-width:2.5;fill:none;marker-end:url(#a)}.dasharrow{stroke:#111;stroke-width:2.3;stroke-dasharray:8 6;fill:none;marker-end:url(#a)}
+</style><marker id="a" markerWidth="11" markerHeight="11" refX="10" refY="3" orient="auto"><path d="M0,0 L11,3 L0,6 Z" fill="#111"/></marker><pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" stroke="#bbb" stroke-width="3"/></pattern></defs>
+<rect width="1600" height="1120" fill="#fff"/>
+<text x="800" y="43" text-anchor="middle" class="title">Governed resolution decision chain for covered-resource terminology queries</text>
+
+<rect x="45" y="90" width="240" height="86" rx="6" class="box"/><text x="165" y="124" text-anchor="middle" class="head">Incoming query</text><text x="165" y="153" text-anchor="middle" class="small">Always enters Level A</text>
+<path d="M285 133 L340 133" class="arrow"/>
+
+<rect x="345" y="82" width="285" height="112" rx="6" class="gate"/><text x="370" y="115" class="level">Level A</text><text x="370" y="147" class="txt">Exact main-name match</text><text x="370" y="177" class="small">Ordered deterministic gate 1</text>
+<path d="M630 138 L680 138" class="arrow"/><text x="655" y="104" text-anchor="middle" class="connector">no eligible</text><text x="655" y="125" text-anchor="middle" class="connector">record</text>
+<rect x="685" y="82" width="285" height="112" rx="6" class="gate"/><text x="710" y="115" class="level">Level B</text><text x="710" y="147" class="txt">Verified alias match</text><text x="710" y="177" class="small">Ordered deterministic gate 2</text>
+<path d="M970 138 L1020 138" class="arrow"/><text x="995" y="104" text-anchor="middle" class="connector">no eligible</text><text x="995" y="125" text-anchor="middle" class="connector">record</text>
+<rect x="1025" y="82" width="285" height="112" rx="6" class="gate"/><text x="1050" y="115" class="level">Level C</text><text x="1050" y="147" class="txt">Normalized deterministic match</text><text x="1050" y="177" class="small">Ordered deterministic gate 3</text>
+
+<path d="M1310 138 L1360 138" class="arrow"/><text x="1335" y="101" text-anchor="middle" class="connector">no deterministic</text><text x="1335" y="123" text-anchor="middle" class="connector">match</text>
+<rect x="1365" y="82" width="200" height="150" rx="6" class="candidate"/><text x="1390" y="115" class="level">Level D</text><text x="1390" y="146" class="txt">Fuzzy retrieval</text><text x="1465" y="180" text-anchor="middle" class="head">CANDIDATE</text><text x="1465" y="205" text-anchor="middle" class="head">SUPPORT ONLY</text>
+
+<text x="500" y="243" text-anchor="middle" class="connector">unique eligible record</text><text x="840" y="243" text-anchor="middle" class="connector">unique eligible record</text><text x="1180" y="243" text-anchor="middle" class="connector">unique eligible record</text>
+<path d="M487 194 L487 340" class="arrow"/><path d="M827 194 L827 340" class="arrow"/><path d="M1167 194 L1167 340" class="arrow"/>
+<rect x="310" y="345" width="1035" height="128" rx="6" class="box"/><text x="827" y="382" text-anchor="middle" class="head">Factual-output boundary — AUTO-RESOLVE</text><text x="827" y="418" text-anchor="middle" class="txt">Only successful unique Level A, B, or C paths may enter</text><text x="827" y="449" text-anchor="middle" class="small">Latin nomenclature copied only from an immutable KB record • provenance linked</text>
+
+<rect x="60" y="530" width="520" height="94" rx="6" class="box"/><text x="320" y="565" text-anchor="middle" class="head">Multiple eligible records at A / B / C</text><text x="320" y="597" text-anchor="middle" class="small">Deterministic match exists, but binding is not unique</text>
+<path d="M487 194 L487 270 L250 270 L250 525" class="dasharrow"/><path d="M827 194 L827 292 L270 292 L270 525" class="dasharrow"/><path d="M1167 194 L1167 314 L290 314 L290 525" class="dasharrow"/>
+
+<rect x="650" y="530" width="410" height="118" rx="6" class="candidate"/><text x="855" y="565" text-anchor="middle" class="head">Nonbinding candidate support</text><text x="855" y="598" text-anchor="middle" class="txt">Never directly authorizes factual output</text><text x="855" y="627" text-anchor="middle" class="small">Candidates may support clarification or review</text>
+<path d="M1465 232 L1465 500 L1065 500 L1065 584" class="arrow"/>
+
+<rect x="180" y="720" width="440" height="125" rx="6" class="review"/><text x="210" y="756" class="level">Level E — AMBIGUOUS</text><text x="400" y="800" text-anchor="middle" class="head">ABSTAIN / HUMAN REVIEW</text><text x="400" y="827" text-anchor="middle" class="small">Multiple eligible records or unresolved ambiguity</text>
+<rect x="760" y="720" width="440" height="125" rx="6" class="review"/><text x="790" y="756" class="level">Level F — UNSUPPORTED</text><text x="980" y="800" text-anchor="middle" class="head">ABSTAIN / HUMAN REVIEW</text><text x="980" y="827" text-anchor="middle" class="small">No supported record after candidate assessment</text>
+<path d="M320 624 L320 715" class="arrow"/><text x="342" y="678" class="connector">ambiguous</text>
+<path d="M855 648 L855 680 L500 680 L500 715" class="arrow"/><text x="650" y="670" text-anchor="middle" class="connector">ambiguous candidates</text>
+<path d="M855 648 L855 695 L980 695 L980 715" class="arrow"/><text x="950" y="687" text-anchor="middle" class="connector">no supported candidate</text>
+
+<rect x="310" y="900" width="940" height="78" rx="6" class="review"/><text x="780" y="934" text-anchor="middle" class="head">Separate review / abstention output path</text><text x="780" y="961" text-anchor="middle" class="small">Levels D, E, and F never connect to the factual-output boundary</text>
+<path d="M400 845 L400 875 L650 875 L650 895" class="arrow"/><path d="M980 845 L980 875 L910 875 L910 895" class="arrow"/>
+
+<rect x="180" y="1010" width="1240" height="78" rx="6" class="box"/><text x="800" y="1042" text-anchor="middle" class="head">LLM role boundary</text><text x="800" y="1071" text-anchor="middle" class="txt">Query reformulation • candidate explanation • clarification — <tspan font-weight="700">NOT Latin-name factual generation</tspan></text>
+</svg>

@@ -1,0 +1,6 @@
+public_record_id,canonical_query_key,verified_aliases,ambiguity_status,review_required
+T900001,甲术语,甲别名,UNAMBIGUOUS,false
+T900002,乙术语,,UNAMBIGUOUS,false
+T900003,丙术语,,UNAMBIGUOUS,false
+T900004,冲突术语,,AMBIGUOUS,true
+T900005,冲突术语,,AMBIGUOUS,true

@@ -1,0 +1,22 @@
+{
+  "note": "Author-verified frozen aggregate results used in Figures 1\u20133; no row-level terminology data.",
+  "development_validation": {
+    "total": 358,
+    "structurally_complete": 351,
+    "exact": 0,
+    "species_denominator": 357,
+    "species_correct": 0
+  },
+  "covered_resource": {
+    "total": 1855,
+    "automatic_resolutions": 1403,
+    "review_or_abstention": 452,
+    "correct_automatic_resolutions": 1400,
+    "unsafe_automatic_resolutions": 3,
+    "B1_correct": "600/600",
+    "B2_correct": "600/600",
+    "B3_top1": "449/600",
+    "B3_top20": "527/600",
+    "B4_abstention": "55/55"
+  }
+}

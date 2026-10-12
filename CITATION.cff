@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying article and this package."
+title: "TCM Governed Terminology Resolution Reproducibility Package"
+type: software
+authors:
+  - family-names: HAN
+    given-names: Qiriga
+    orcid: "https://orcid.org/0000-0001-5862-8253"
+  - family-names: LI
+    given-names: Taoan
+    orcid: "https://orcid.org/0009-0003-5374-0918"
+  - family-names: LU
+    given-names: Ling
+    orcid: "https://orcid.org/0009-0006-6149-6515"
+repository-code: "https://github.com/qiriga/tcm-governed-terminology-resolution"
+license: MIT
+version: "0.1.0"
+date-released: "2026-10-12"

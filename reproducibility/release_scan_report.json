@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "files_scanned": 52,
+  "findings": [],
+  "scope": "staging repository; version-control internals excluded"
+}
